@@ -1200,7 +1200,7 @@ footer {
     }
     
     .interior_box {
-        height: 80vh;
+        height: 90vh;
     }
 
     .line {
@@ -1235,7 +1235,7 @@ footer {
     }
 
     aside {
-        height: 135rem;
+        height: 130rem;
     }
 
     .img1 {
@@ -1258,16 +1258,16 @@ footer {
     }
 
     .text1 {
-        font-size: 12rem;
+        font-size: 10rem;
         top: 1rem;
-        left: 6vw;
+        left: 7vw;
         text-shadow: 2px 2px 1px #000;
     }
     
     .text2 {
-        font-size: 4.5rem;  
+        font-size: 4rem;  
         text-shadow: 1px 1px 3px #555;
-        top: 109rem;
+        top: 100rem;
         right: 10vw;
     }
 
@@ -1278,9 +1278,10 @@ footer {
     .text4 {
         width: 80%;
         left: 10vw;
-        top: 117rem;
+        top: 110rem;
         font-size: 2.5rem;
         line-height: 4rem;
+        text-align: center;
     }
 
     .text4 br {
