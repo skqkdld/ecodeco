@@ -747,6 +747,17 @@ article {
     justify-content: center;
 }
 
+.contact_text h1{
+    font-family: 'Abril Fatface', cursive; 
+    font-size: 3.5rem;
+}
+
+.contact_text p{
+    font-family: 'GmarketSansLight'; 
+    font-size: 2rem; 
+    margin: 3vw 0 2vw 0;
+}
+
 .show_box {
     margin: 2vw;
     width: 23vw;
@@ -768,15 +779,19 @@ article {
     padding-top: 2vw;
 }
 
-.show_box:hover {
-    box-shadow: .2vw .2vw .2vw gainsboro;
-}
 
-.show_box:hover img,
-.show_box:hover p {
-    opacity: 0;
-    transition: .5s;
-    transform: rotateX(90deg);
+@media (hover: hover) {
+    .show_box:hover {
+        box-shadow: .2vw .2vw .2vw gainsboro;
+    }
+    
+    .show_box:hover img,
+    .show_box:hover p {
+        opacity: 0;
+        transition: .5s;
+        transform: rotateX(90deg);
+    }
+    
 }
 
 .hidden_box {
@@ -794,6 +809,8 @@ article {
     transition: .3s;
     letter-spacing: 1px;
 }
+
+
 
 
 /* footer */
@@ -1194,8 +1211,10 @@ footer {
     .eco_img {
         position: static;
     }
-
+    
     .eco_img img{
+        height: 20rem;
+        object-fit: cover;
         display: block;
     }
     
@@ -1297,6 +1316,17 @@ footer {
         width: 85%;
         margin: 0 auto;
     }
+
+    .contact_text h1{
+        font-size: 8rem;
+    }
+
+    .contact_text p{
+        font-size: 2.5rem;
+        line-height: 4rem;
+        word-break: keep-all;
+    }
+
     .contact_box {
         flex-wrap: wrap;
     }
@@ -1307,6 +1337,11 @@ footer {
     }
 
     .show_box p {
+        margin: 3rem 0;
+        padding: 0;
+    }
+    
+    .hidden_box h3{
         display: none;
     }
 
@@ -1314,12 +1349,16 @@ footer {
         height: 20rem;
     }
 
+    .f_logo {
+        width: 20rem;
+    }
+
     .footer_right {
         display: none;
     }
     
-    .footer_right p {
-        padding-bottom: .5vw;
+    .footer_left p {
+        padding-bottom: 1rem;
     }
     } 
 
