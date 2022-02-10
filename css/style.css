@@ -151,6 +151,7 @@ video {
     top: 23vw;
     right: 1rem;
     z-index: 1;
+    text-shadow: 2px 2px 5px #111;
 }
 
 
@@ -202,6 +203,10 @@ section {
 
 .about_us_img img{
     width: 100%;
+}
+
+.about_us_img_m {
+    display: none;
 }
 
 /* section2 */
@@ -536,7 +541,7 @@ figure {
 
 .line {
     width: 8rem;
-    border-bottom: .5vw solid #0F5114;
+    border-bottom: 1rem solid #0F5114;
     position: absolute;
     top: 37rem;
     left: 35vw;
@@ -834,6 +839,10 @@ footer {
     padding-bottom: .5vw;
 }
 
+.hide_f {
+    display: none;
+}
+
 @media screen and (max-width: 1500px){
     :root {
         font-size: 12px;
@@ -944,10 +953,10 @@ footer {
     .fixed_menu {
         display: block;
         position: fixed;
+        top: 0;
         width: 100%;
         z-index: 10;
         padding: 3rem 0;
-        background: rgba(255, 255, 255, .8);
     }
 
     .min_menu {
@@ -955,6 +964,10 @@ footer {
         display: flex;
         justify-content: space-between;
         padding: 0 3rem;
+    }
+
+    .logo {
+        display: none;
     }
 
     .logo_b {
@@ -984,7 +997,7 @@ footer {
 
     #bg_txt p{
         font-size: 4rem;
-        top: 30rem;
+        top: 30vw;
     }
 
     .interior_box {
@@ -1011,7 +1024,7 @@ footer {
     }
 
     aside {
-    height: 50vw;
+        height: 50vw;
     }
 
     .img1 {
@@ -1105,42 +1118,208 @@ footer {
     :root {
         font-size: 5px;
     }
+
+    .vdo {
+        height: 80rem;
+    }
     
+    section {
+        width: 100%;
+    }
+
     .about_us {
+        width: 100%;
+        margin: 3.5rem 0;
         padding: 8rem 0;
-        overflow-y: hidden;
+    }
+
+    .about_us_img {
+        display: none;
     }
 
     .about_us_text {
         width: 80%;
         z-index: 1;
-        padding-left: 5rem;
+        margin: 0 auto;
     }
     
     .about_us_text h1 {
-        font-size: 3.5rem;
-        font-family: 'GmarketSansMedium';
-        color: #fff;
+        font-size: 4.5rem;
     }
     
     .about_us_text h2 {
-        color: #fff;
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     
     .about_us_text p, .interior_text p {
-        font-size: 1rem;
-        line-height: 3rem;
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    .interior {
+        margin: 5rem 0;
+        padding-bottom: 5rem;
+        display: block;
+    }
+
+    .interior_img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .interior_text {
+        padding: 0;
+        width: 80%;
+        padding-left: 3rem;
+    }
+
+    .interior_text h1 {
+        font-size: 4rem;
+        font-family: 'GmarketSansMedium';
+        margin: 4rem 0;
+        margin-top: 10rem;
+    }
+    .interior_text br {
+        display: none;
+    }
+
+    .hover_box {
+        display: none;
+    }
+
+    figure {
+        height: 100%;
+    }
+
+    .eco_img {
+        position: static;
+    }
+
+    .eco_img img{
+        display: block;
+    }
+    
+    .interior_box {
+        height: 80vh;
+    }
+
+    .line {
+        width: 10rem;
+        top: 47rem;
+    }
+
+    .topic {
+        top: 50rem;
+    }
+
+    .seolmyeong {
+        top: 90rem;
+    }
+
+    .btn_more {
+        top: 115rem;
+        left: 50vw;
+    }
+
+    .styls_img1 {
+        width: 45%;
+    }
+
+    .styls_img2 {
+        width: 40%;
+    }
+
+    .styls_img3 {
+        width: 45%;
+        top: 80rem;
+    }
+
+    aside {
+        height: 135rem;
+    }
+
+    .img1 {
+        display: none;
+    }
+
+    .img3 {
+        width: 80%;
+        border-radius: 50vw 50vw 0 0;
+        left: 9vw;
+        top: 17rem;
+    }
+
+    .img6, .img7, .img8, .img9{
+        display: none;
+    }
+
+    .text_box {
         color: #fff;
     }
-    
-    .about_us_img {
-        position: absolute;
-        width: 90%;
-        right: 0;
-        filter: brightness(90%); 
+
+    .text1 {
+        font-size: 12rem;
+        top: 1rem;
+        left: 6vw;
+        text-shadow: 2px 2px 1px #000;
     }
     
+    .text2 {
+        font-size: 4.5rem;  
+        text-shadow: 1px 1px 3px #555;
+        top: 109rem;
+        right: 10vw;
+    }
+
+    .text2 br, .text3 {
+        display: none;
+    }
+
+    .text4 {
+        width: 80%;
+        left: 10vw;
+        top: 117rem;
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+
+    .text4 br {
+        display: none;
+    }
+
+    article {
+        height: 100%;
+        margin-bottom: 10rem;
+    }
+
+    .contact {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .contact_box {
+        flex-wrap: wrap;
+    }
+
+    .show_box {
+        width: 70%;
+        height: 100%;
+    }
+
+    .show_box p {
+        display: none;
+    }
+
+    footer {
+        height: 20rem;
+    }
+
+    .footer_right {
+        display: none;
+    }
+    
+    .footer_right p {
+        padding-bottom: .5vw;
+    }
     } 
 
 
