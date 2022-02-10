@@ -14,25 +14,36 @@
     <title>ECODECO</title>
     <link rel="icon" type="image/png" sizes="16x16" href="img/eco_icon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@400;500;700&family=Orbitron&family=Praise&family=Trirong&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@400;500;700&family=Orbitron&family=Praise&family=Trirong&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 
-<body  ontouchstart="">
+<body ontouchstart="">
     <div class="warp">
         <div class="fixed_menu">
-                <div class="min_menu">
-                    <div class="logo_b"style="z-index: 1;">
-                        <a><img src="img/LOGOBLKE.png" alt="로고이미지"></a>
+            <div class="hidden_menu">
+                <div class="logo_b" style="z-index: 1;">
+                    <a><img src="img/LOGOBLKE.png" alt="로고이미지"></a>
+                </div>
+                <div class="toggle_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-text-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                    </svg></div>
+            </div>
+                <div class="toggle_menu">
+                    <div class="hide_toggle">
+                        <div>브랜드스토리</div>
+                        <div>친환경인테리어</div>
+                        <div>인테리어제안</div>
+                        <div><a href="sub.html" target="_blank">인테리어 상담</a></div>
                     </div>
-                    <ul>
-                        <li>브랜드스토리</li>
-                        <li>친환경인테리어</li>
-                        <li>인테리어제안</li>
-                        <li><a href="sub.html" target="blank">인테리어 상담</a></li>
-                    </ul>
                 </div>
         </div>
         <header>
@@ -42,15 +53,15 @@
                 </video>
             </div>
             <div class="nav">
-                <div class="logo"style="z-index: 1;">
+                <div class="logo" style="z-index: 1;">
                     <a><img src="img/logo.png" alt="로고이미지"></a>
-                </div> 
+                </div>
                 <div class="nav_menu" style="z-index: 1;">
                     <ul>
                         <li>브랜드스토리</li>
                         <li>친환경인테리어</li>
                         <li>인테리어제안</li>
-                        <li><a href="sub.html" target="blank">인테리어 상담</a></li>
+                        <li><a href="sub.html" target="_blank">인테리어 상담</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +76,7 @@
                         <h1>We Design Places<br> With Nature Materials</h1><br>
                         <h2>지구환경을 지키는 친환경 기업입니다.</h2><br>
                         <p>[NAMUH]는 [HUMAN]을 거꾸로 읽은 단어입니다<br>
-                            자연 그대로 인간을 최우선 가치로 두고 건강한 공간을 
+                            자연 그대로 인간을 최우선 가치로 두고 건강한 공간을
                             구현하는 의지를 브랜드에 담았습니다.</p>
                     </div>
                     <div class="about_us_img" data-aos="fade-left"><img src="img/base.jpg" alt=""></div>
@@ -89,6 +100,13 @@
                 </div>
             </section>
             <figure>
+                <div class="eco_hide">
+                    <div class="single-item">
+                        <img src="img/Marmoleum_m.png" alt="">
+                        <img src="img/edenbio_m.png" alt="">
+                        <img src="img/cork_m.png" alt="">
+                    </div>
+                </div>
                 <div class="eco_img_box">
                     <div class="eco_img show"><img src="img/Marmoleum.jpg" alt="Marmoleum" class="marmoleum"></div>
                     <div class="eco_img"><img src="img/edenbio.jpg" alt="edenbio" class="edenbio"></div>
@@ -192,15 +210,15 @@
                 </div>
                 <div class="classic_box styls_box">
                     <div class="Vertical">Classlc</div>
-                    <div class="img_box" >
+                    <div class="img_box">
                         <img src="img/classic1.jpg" alt="" class="styls_img1">
                         <img src="img/classic2.jpg" alt="" class="styls_img2">
                         <img src="img/classic3.jpg" alt="" class="styls_img3">
                     </div>
                     <div class="text_box">
-                        <p class="seolmyeong">과하지 않은 화여함으로 절제된 아름다움을 
-                            보여주는 클래식 스타일은 적절하게 가미된 
-                            장식적 요소와 우아한 곡선 포인트로 공간에 
+                        <p class="seolmyeong">과하지 않은 화여함으로 절제된 아름다움을
+                            보여주는 클래식 스타일은 적절하게 가미된
+                            장식적 요소와 우아한 곡선 포인트로 공간에
                             격식과 품격을 더해줍니다.</p>
                         <div class="line"></div>
                         <p class="topic">
@@ -219,7 +237,7 @@
                     </div>
                     <div class="text_box">
                         <p class="seolmyeong">나만의 개성과 취향을 담아 생동감 넘치는
-                            유니크 스타일은 지루하고 나른한 일상에 
+                            유니크 스타일은 지루하고 나른한 일상에
                             새로움을 선사합니다.</p>
                         <div class="line"></div>
                         <p class="topic">
@@ -232,6 +250,7 @@
                 <button class="btn_more" style=> 인테리어 더보기 ></button>
             </section>
             <aside>
+                <div class="hide_text"><p>Maisonkorea</p></div>
                 <div id="img_box">
                     <img src="img/Untitled-1.png" alt="" class="img6">
                     <img src="img/maison.jpg" alt="" class="img1">
@@ -259,12 +278,13 @@
                             라이프스타일에 딱 맞는 인테리어를 제안해 드립니다. </p>
                     </div>
                     <div class="contact_box">
-                        <div class="show_box">
-                            <img src="img/contact1.jpg" alt="">
-                            <p style="padding-top: 2.3vw;"><a href="sub.html" target="blank">상담신청하기</a></p>
-                            <div class="hidden_box">
-                                <h3><a href="sub.html" target="blank">Concierge Service ></a></h3>
-                            </div>
+                        <div class="show_box"><a href="sub.html" target="blank">
+                                <img src="img/contact1.jpg" alt="">
+                                <p style="padding-top: 2.3vw;">상담신청하기</p>
+                                <div class="hidden_box">
+                                    <h3><a href="sub.html" target="blank">Concierge Service ></a></h3>
+                                </div>
+                            </a>
                         </div>
                         <div class="show_box">
                             <img src="img/contact2.jpg" alt="">

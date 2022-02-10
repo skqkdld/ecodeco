@@ -1,17 +1,4 @@
 $(function(){
-    // // 네비스크롤효과
-    // $(window).on('scroll',function(){
-    //     if ( $(window).scrollTop() > 500 ) {
-    //         $('.nav').addClass('nav_black');
-    //         $('.nav_btn').addClass('nav_btn_black');
-    //         $('.logo_img').css('filter', 'invert(100)');
-    //     } else {
-    //         $('.nav').removeClass('nav_black');
-    //         $('.nav_btn').removeClass('nav_btn_black');
-    //         $('.logo_img').css('filter', 'invert(0)');
-    //     }
-    // });
-    
 
     // 1번째 내용 스크롤효과
     $(window).on('scroll',function(){
@@ -127,10 +114,6 @@ $(function(){
         $('.motion10').css('transform', 'translate(0px, 20vw) rotate(-40deg)'); 
     });
 
-
-
-
-
     // 고객안내창 호버효과 
 
     for (let i = 0; i < 3; i++){
@@ -142,6 +125,29 @@ $(function(){
         });
     }
 
+    // 460px
+    $(window).on('scroll',function(){
+        if ( $(window).scrollTop() > 300 ) {
+            $('.fixed_menu').css('position','fixed');
+        } else {
+            $('.fixed_menu').css('position', 'static');
+        }
+    });
+
+    $('.single-item').slick({
+        // dots: true,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 2000
+    });
+
+    $('.bi-text-right').click(function () {
+        $('.toggle_menu').slideToggle();
+    });
 
 });
 
