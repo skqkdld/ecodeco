@@ -1,11 +1,3 @@
-/* 
-font-family: 'Abril Fatface', cursive;
-font-family: 'Noto Sans KR', sans-serif;
-font-family: 'Orbitron', sans-serif;
-font-family: 'Praise', cursive;
-font-family: 'Trirong', serif; 
-*/
-
 @font-face {
     font-family: 'ChosunGu';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
@@ -28,13 +20,11 @@ font-family: 'Trirong', serif;
 }
 
 
-
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    word-break: keep-all;
 }
 
 :root {
@@ -56,50 +46,93 @@ ul li {
     height: 100%;
 }
 
+/************************************ 모바일네비 */
+
+.fixed_menu {
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    display: none;
+}
+
+.hidden_menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_b img {
+    width: 10rem;
+}
+
+.toggle_icon {
+    cursor: pointer;
+}
+
+.toggle_icon svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.toggle_menu {
+    position: absolute;
+    left: 0;
+    top: 6.5rem;
+    display: none;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+    background: #90aa92;
+}
+
+.toggle_menu div {
+    margin: 4rem;
+    font-family: 'ChosunGu';
+    font-size: 2rem;
+}
+
+.hide_toggle{
+    cursor: pointer;
+    padding: 3vw;
+    position: relative;
+    color: #fff;
+}
+
+.hide_toggle div a{
+    color: #fff;
+    font-family: 'GmarketSansLight';
+}
 
 
 /********** nav-menu **********/
 
 header {
     width: 100%;
-    height: 6vw;
+    padding: 2rem;
     position: relative;
+    border-bottom: #90aa92 1px solid;
 }
 
 .nav {
-    width: 100%;
-    height: 100%;
-    border-bottom: #90aa92 1px solid;
+    width: 90%;
     margin: 0 auto;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-    width: 12vw;
-    margin-top: 1vw;
-    position: absolute;
-    left: 8vw;
-    filter: invert(0);
-}
-
-.hide-logo {
-    width: 100%;
-    display: none;
-}
-
-.logo_w {
-    width: 15vmax;
-    margin-top: 2vw;
+    width: 10rem;
 }
 
 .logo img {
     width: 100%;
 }
 
-.nav_menu {
-    position: absolute;
-    right: 6vw;
-    top: 2.2vw;
+.hide-logo {
+    width: 100%;
+    display: none;
 }
 
 .nav_menu ul {
@@ -109,16 +142,14 @@ header {
 .nav_btn {
     color: #000;
     font-size: 1.2rem;
-    padding: 1.5vw;
-    margin: 1vw;
+    padding: 2rem;
+    margin: 1rem;
     font-family: 'GmarketSansLight';
-    font-weight: bold;
 }
 
 .nav_btn:hover {
     color: #90aa92;
 }
-
 
 /*********** 상담창 *********/
 
@@ -130,7 +161,7 @@ main {
 }
 
 .title {
-    width: 13%;
+    font-size: 1.5rem;
     margin: 0 auto;
     padding: 5vmax 0;    
     text-align: center;
@@ -138,69 +169,60 @@ main {
 }
 
 .line {
-    width: 100%;
-    border-bottom: #90aa92 .5vmax solid;
-    margin: 1vmax auto;
+    width: 12rem;
+    border-bottom: #90aa92 .5rem solid;
+    margin: 1rem auto;
 }
 
 .contact {
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
-aside {
-    width: 50%;
+aside, section {
+    width: 50vmax;
 }
 
-section {
-    width: 50%;
-}
 
 /**** left-box ****/
 
 .left_box {
-    width: 70%;
-    margin: 0 30%;
-    padding: 8vw 2vw;
     text-align: center;
+    margin: -10rem 3rem 0 10rem;
 }
 
 .left_box h3 {
-    margin-bottom: 2vw;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 1.3rem;
+    font-family: 'Abril Fatface', cursive; 
+    font-size: 2rem;
+    line-height: 5rem;
 }
 
 .left_box img {
     width: 100%;
-    margin-bottom: 1vw;
+    margin-bottom: 1rem;
 }
 
 .left_box p {
-    width: 90%;
-    margin: 0 auto;
-    font-size: .5rem;
-    font-family: 'ChosunGu';
-    font-weight: bold;
-    text-align: center;
-    line-height: 1.5vw;
+    font-size: .8rem;
+    line-height: 1.5rem;
     color: #999;
 }
 
 /**** right-box ****/
 
 .right_box {
-    width: 60%;
-    margin: 0 0 0 5%;
-    font-family: 'ChosunGu';
-    font-weight: bold;
-    font-size: .8vw;
+    margin: 0 10rem 0 3rem;
 }
 
 .right_box p {
-    margin-top: 1rem;
+    line-height: 3rem;
+    font-family: 'ChosunGu';
+}
+
+.check-box, .radio-box, .input-box, .file-box {
     margin-bottom: .5rem;
+    font-family: 'ChosunGu';
 }
 
 /* check-box */
@@ -212,13 +234,11 @@ section {
 .box-checkbox-input input[type="checkbox"]+span {
     display: inline-block;
     width: 32.7%;
-    /* margin: 0.6vw auto; */
-    padding: 1vmin;
+    padding: .8rem;
     background-color: #fff;
     border: rgb(199, 199, 199) 1px solid;
     border-radius: .2vw;
     text-align: center;
-    font-weight: bold;
     font-size: .8rem;
     cursor: pointer;
 }
@@ -239,12 +259,10 @@ section {
     display: inline-block;
     position: relative;
     width: 49.5%;
-    /* margin: .6vw 0; */
-    padding: 1vmin;
+    padding: .8rem;
     border: rgb(199, 199, 199) 1px solid;
     border-radius: .2vw;
     text-align: center;
-    font-weight: bold;
     font-size: .8rem;
     cursor: pointer;
     background-color: #fff;
@@ -264,14 +282,11 @@ section {
 
 .box-radio-input2 input[type="radio"]+span {
     display: inline-block;
-    position: relative;
     width: 32.7%;
-    /* margin: .6vw 0; */
-    padding: 1vmin;
+    padding: .8rem;
     border: rgb(199, 199, 199) 1px solid;
     border-radius: .2vw;
     text-align: center;
-    font-weight: bold;
     font-size: .8rem;
     cursor: pointer;
     background-color: #fff;
@@ -287,11 +302,11 @@ section {
 
 #area {
     width: 100%;
-    /* margin: .6vw 0; */
-    padding: 1.2vmin;
+    height: 2.7rem;
     border: rgb(199, 199, 199) 1px solid;
     border-radius: .2vw;
     color: rgb(199, 199, 199);
+    padding-left: 1rem;
 }
 
 input:focus {
@@ -300,7 +315,6 @@ input:focus {
 
 input {
     font-family: 'ChosunGu';
-    font-weight: bold;
     font-size: .7rem;
 }
 
@@ -308,26 +322,24 @@ input {
 
 .tel {
     display: inline-block;
-    padding: 1vmin;
+    padding: .8rem;
     width: 25%;
     background-color: #fdfdfd;
     border: rgb(199, 199, 199) 1px solid;
     border-radius: .2vw;
     font-family: 'ChosunGu';
-    font-weight: bold;
     font-size: .8rem;
     text-align: center;
     cursor: pointer;
 }
 
-
 #telemail {
     width: 74%;
     font-size: .8rem;
-    padding: 1.1vmin;
+    padding: .9rem;
     border: rgb(199, 199, 199) 1px solid;
     border-radius: .2vw;
-    margin-left: .2vw;
+    margin-left: .3rem;
 }
 
 
@@ -345,7 +357,8 @@ input {
 .filebox label {
     display: inline-block;
     width: 18%;
-    padding: 1vmin;
+    height: 3rem;
+    padding: .8rem;
     color: #999;
     vertical-align: middle;
     background-color: #fdfdfd;
@@ -353,15 +366,15 @@ input {
     border-radius: .2vw;
     text-align: center;
     cursor: pointer;
-    line-height: 1vw;
 }
 
 .filebox .upload-name {
     display: inline-block;
+    height: 3rem;
     width: 81%;
-    padding: .6vw;
     font-size: .8rem;
-    vertical-align: middle;
+    padding: 1rem;
+    /* vertical-align: middle; */
     background-color: #f5f5f5;
     border: 1px solid #ebebeb;
     border-radius: .2vw;
@@ -369,18 +382,17 @@ input {
 
 .submit-box {
     width: 100%;
-    margin: 2vmax auto;
-
+    margin: 2rem auto;
 }
 
 .submit-btn {
-    width: 7vmax;
-    padding: 1vmax;
+    width: 10rem;
+    padding: 1.5rem;
     font-size: 1rem;
     background-color: #0F5114;;
     color: #fff;
     border: none;
-    border-radius: 2vw;
+    border-radius: 5rem;
     cursor: pointer;
     margin: 0 auto;
     display: block;
@@ -433,110 +445,100 @@ footer {
 }
 
 
-@media screen and (max-width: 1000px) {
-
-    section {
-        width: 90% !important;
-        height: 85vmax !important;
-    }
-
-    .tel {
-        font-size: .5rem !important;
-    }
-
-    .left_box p {
-        font-size: .5rem !important;
-    }
-
-    .nav_btn {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 760px) {
-
+@media screen and (max-width: 1500px) {
 
     :root {
-        font-size: 12px !important;
-    }
-
-    header {
-        height: 10vmax !important;
-        background-color: #90aa92;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .hide-logo {
-        display: block !important;
-    }
-
-    .title {
-        padding: 2vmax 0 !important;    
-    }
-
-    .contact {
-        display: block !important;
-    }
-
-    aside {
-        width: 100% !important;
+        font-size: 14px;
     }
 
     .left_box {
-        width: 80% !important;
-        margin: 0 auto !important;
-        padding: 0 0 5vmax 0!important;
+        margin: -3rem 3rem 0 3rem;
     }
-
-
-    .left_box p {
-        line-height: 15px !important;
-    }
-
-
-    h1 {
-        font-size: 1.3rem !important;
-    }
-
-    h3 {
-        font-size: 1rem !important;
-    }
-
-    .left_box img {
-        width: 70% !important;
-    }
-
-    section {
-        width: 100% !important;
-        margin: 0 !important;
-    }
-
+    
     .right_box {
-        width: 90% !important;
-        margin: 0 auto !important;
+        margin: 0 3rem 0 3rem;
     }
 
-    input {
-        font-size: 6px !important;
+}
+
+@media screen and (max-width: 1100px) {
+
+    :root {
+        font-size: 12px;
     }
 
     .nav_btn {
-        display: none !important;
+        padding: 1rem;
+        margin: .5rem;
     }
 
-    .submit-btn {
-        top: 55% !important;
+    .contact {
+        flex-wrap: wrap;
+    }
+
+    aside, section {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    section {
+        margin-top: 3rem;
+    }
+
+}
+
+
+@media screen and (max-width: 760px) {
+
+    :root {
+        font-size: 10px;
+    }
+
+    aside, section {
+        width: 80%;
+    }
+
+    .fixed_menu {
+        display: block;
+        top: 0;
+    }
+    .nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    :root {
+        font-size: 7px;
+    }
+
+    .left_box p {
+        line-height: 2rem;
+    }
+
+    aside, section {
+        width: 100%;
+    }
+
+    #area {
+        height: 3.5rem;
+    }
+
+    footer {
+        height: 20rem;
+    }
+
+    .f_logo {
+        width: 20rem;
     }
 
     .footer_right {
         display: none;
     }
     
-    .footer_right p {
-        padding-bottom: .5vw;
+    .footer_left p {
+        padding-bottom: .5rem;
     }
-    
+
 }

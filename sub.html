@@ -5,29 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ECODECO</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/eco_icon.png">
+    
     <link rel="stylesheet" href="css/substyle.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@400;500;700&family=Orbitron&family=Praise&family=Trirong&display=swap"
-        rel="stylesheet">
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/sub.js"></script>
 </head>
 
 <body>
     <div class="warp">
         <header>
+            <div class="fixed_menu">
+                <div class="hidden_menu">
+                    <div class="logo_b" style="z-index: 1;">
+                        <a><img src="img/LOGOBLKE.png" alt="로고이미지"></a>
+                    </div>
+                    <div class="toggle_icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-text-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                        </svg></div>
+                </div>
+                    <div class="toggle_menu">
+                        <div class="hide_toggle">
+                            <div>브랜드스토리</div>
+                            <div>친환경인테리어</div>
+                            <div>인테리어제안</div>
+                            <div><a href="index.html" target="_blank">인테리어 상담</a></div>
+                        </div>
+                    </div>
+            </div>
             <div class="nav">
                 <div class="logo">
                     <a href="index.html"><img src="img/LOGOBLKE.png" alt="" class="logo_img"></a>
-                </div>
-                <div class="hide-logo">
-                    <a href="index.html"><img src="img/logo.png" alt="" class="logo_w"></a>
                 </div>
                 <div class="nav_menu">
                     <ul>
                         <li><a href="#" class="nav_btn">브랜드 스토리</a></li>
                         <li><a href="#" class="nav_btn">친환경 인테리어</a></li>
                         <li><a href="#" class="nav_btn">인테리어 제안</a></li>
-                        <li><a href="#" class="nav_btn">인테리어 상담</a></li>
+                        <li><a href="#" class="nav_btn" style="padding-right: 0;">인테리어 상담</a></li>
                     </ul>
                 </div>
             </div>
@@ -90,8 +109,7 @@
                             </div>
                         </div>
                         <!-- radio-box -->
-                        <div class="radio-box
-                        div>">
+                        <div class="radio-box">
                             <p>시공당일 주거환경은 어떤가요?</p>
                             <div class="clike_btn">
                                 <label class="box-radio-input2"><input type="radio" name="cp_item3"
