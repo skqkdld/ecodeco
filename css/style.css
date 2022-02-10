@@ -1,0 +1,1151 @@
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HSBombaram';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes up-down {
+    from {
+        transform: translatey(0px);
+    }
+
+    to {
+        transform: translatey(-10px);
+    }
+}
+
+@keyframes up-down2 {
+    from {
+        transform: translatey(0px);
+    }
+
+    to {
+        transform: translatey(-20px);
+    }
+}
+
+body {
+    font-family: 'GmarketSansLight';
+    font-weight: bold;
+    overflow-x: hidden; 
+    /* overflow-y: auto; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+ul li {
+    list-style: none;
+    color: #fff;
+}
+
+.warp {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    min-height: 50vw;
+}
+
+.fixed_menu {
+    display: none;
+}
+
+.vdo {
+    width: 100%;
+    height: 60rem;
+    overflow-y: hidden;
+    position: absolute;
+}
+
+video {
+    width: 100%;
+}
+
+.nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 11rem;
+    margin-top: 3rem;
+}
+
+.logo img {
+    width: 100%;
+
+}
+
+.nav_menu ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.nav_menu ul li {
+    cursor: pointer;
+    padding: 0 1rem;
+    margin: 0 2rem;
+    font-size: 1.2rem;
+}
+
+.nav_menu ul li:nth-child(4) {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.nav_menu ul li:hover, .nav_menu a:hover {
+    color: #000;
+}
+
+.nav_menu a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#bg_txt p{
+    color: #fff;
+    text-align: end;
+    font-size: 5rem;
+    margin-right: 10rem;
+    position: absolute;
+    top: 23vw;
+    right: 1rem;
+    z-index: 1;
+}
+
+
+/* main */
+/* section1 */
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+.about_us {
+    width: 100%;
+    overflow-x: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 1s;
+    margin: 10rem 0 10rem 5rem;
+}
+
+.about_us_text {
+    width: 45vmax;
+    padding: 0 2rem;
+    word-break: keep-all;
+}
+
+.about_us_text h1, .interior_text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.about_us_text h2 {
+    font-size: 2rem;
+}
+
+.about_us_text p, .interior_text p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.about_us_img {
+    width: 50vmax;
+}
+
+.about_us_img img{
+    width: 100%;
+}
+
+/* section2 */
+
+.interior {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 1s;
+    margin: 10rem 0 20rem 10rem;
+}
+
+.interior_img {
+    width: 35vmax;
+}
+
+.mbrimg {
+    position: relative;
+}
+
+.interior_img img {
+    width: 100%;
+    box-shadow: 1rem 1rem 1rem rgba(119, 119, 119, 0.616);
+    animation: up-down2 1.2s infinite ease-in-out alternate;
+}
+
+.square {
+    position: absolute;
+    top: 5vw;
+    left: 15%;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #0F5114;
+}
+
+.interior_text {
+    width: 45vmax;
+    padding: 0 4rem;
+    margin: 0 7rem;
+    word-break: keep-all;
+}
+
+.interior_text span {
+    width: 100%;
+    height: 2px;
+    border-bottom: 1px solid;
+}
+
+
+/* figure */
+
+figure {
+    width: 100%;
+    height: 45vw;
+    position: relative;
+    object-fit: cover;
+}
+
+.eco_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.eco_img img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.eco_img:nth-child(1) img {
+    display: block !important;
+}
+
+.hover_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.hover_img:hover{
+    cursor: pointer;
+} 
+
+.hover_img:hover .white_box{
+    height: 13rem;
+} 
+
+.hover_img:hover .more_btn{
+    display: block;
+}
+
+.hover_img {
+    width: 33.33%;
+    height: 100%;
+    border: solid 1px #fff;
+}
+
+.hover_img:hover .name p{
+    color: black;
+    text-shadow: none;
+} 
+
+.white_box {
+    width: 100%;
+    height: 0px;
+    background: #fff;
+    position: relative;
+    transition: .5s;
+}
+
+.name {
+    position: absolute;
+    top: 0;
+    padding: 2rem 3rem;
+    color: #fff
+}
+
+.name p:nth-child(1) {
+    font-size: 4vw;
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 2px 2px 2px rgba(80, 80, 80, 0.685);
+    font-weight: normal;
+}
+
+.name p:nth-child(2) {
+    font-size: 1.5vw;
+    font-family: 'GmarketSansLight';
+    font-weight: normal;
+    text-shadow: 2px 2px 2px rgba(80, 80, 80, 0.685);
+}
+
+.more_btn{
+    position: absolute;
+    color: #fff;
+    bottom: 3rem;
+    padding-left: 18vw;
+    display: none;
+}
+
+.more_btn p {
+    font-size: 1.5rem;
+    width: 20rem;
+}
+
+
+/* section3 */
+/* interior_box */
+
+.interior_box {
+    width: 90%;
+    position: relative;
+    height: 80rem;
+    transition: 1s;
+    margin: 6rem auto;
+    padding: 6rem 0;
+    margin-bottom: 0;
+}
+
+/* 배경도형 */
+.motion_circle div, .motion_circle_bg div, .motion_line div{transition: .5s;}
+.motion1 {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 40vw;
+    border: 1px solid rgb(100, 100, 100);
+    position: absolute;
+    left: 30vw;
+    top: 1vw;
+    opacity: .5;
+}
+
+.motion2 {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 25vw;
+    border: 1px solid rgb(100, 100, 100);
+    position: absolute;
+    left: 10vw;
+    top: 30vw;
+    opacity: .5;
+}
+
+.motion3 {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 5vw;
+    background: rgb(100, 100, 100);
+    position: absolute;
+    left: 30vw;
+    top: 5vw;
+    opacity: .5;
+}
+
+.motion4 {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50px;
+    background: rgb(100, 100, 100);
+    position: absolute;
+    left: 50vw;
+    top: 40vw;
+    opacity: .5;
+    color: rgb(211, 206, 141);
+}
+
+.motion5 {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 2vw;
+    background: rgb(100, 100, 100);
+    position: absolute;
+    left: 80vw;
+    top: 20vw;
+    opacity: .5;
+}
+
+.motion6 {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 30vw;
+    border: 1px solid rgb(100, 100, 100);
+    position: absolute;
+    left: 70vw;
+    top: 32vw;
+    opacity: .5;
+}
+
+.motion7 {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 1vw;
+    background: rgb(100, 100, 100);
+    position: absolute;
+    left: 20vw;
+    top: 10vw;
+    opacity: .5;
+}
+
+.motion8 {
+    width: 40vw;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    position: absolute;
+    left: 35vw;
+    top: 30vw;
+    transform: rotate(40deg);
+    opacity: .5;
+}
+
+.motion9 {
+    width: 30vw;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    position: absolute;
+    left: 40vw;
+    top: 25vw;
+    transform: rotate(40deg);
+    opacity: .5;
+}
+
+.motion10 {
+    width: 20vw;
+    border-bottom: 1px solid rgb(100, 100, 100);
+    position: absolute;
+    left: 40vw;
+    top: 30vw;
+    transform: rotate(40deg);
+    opacity: .5;
+}
+
+
+/* 인테리어스타일 */
+
+.Vertical {
+    width: 6rem;
+    height: 6rem;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(-90deg);
+    /* width: 100px; */
+    position: absolute;
+    top: 11rem;
+    left: 6vw;
+    font-family: 'Abril Fatface', cursive;
+    color: #0F5114;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.btn_family {
+    position: absolute;
+    top: 6rem;
+    right: 17vw;
+}
+
+.btn_family button:hover {
+    cursor: pointer;
+}
+
+.btn_family button {
+    background-color: rgba(255, 255, 255, 0);
+    padding: .5vh; 
+    font: 3rem 'Abril Fatface', cursive;
+    display: flex;
+    justify-content: center;
+    border: none;
+    text-align: center;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+.btn_int>span:nth-child(1) {
+    height: 3rem;
+    width: 8rem;
+    background: linear-gradient(to top, #90aa92 60%, #ffffff00 40%);
+    position: absolute;
+    display: none;
+}
+
+.btn_family > button:nth-child(1) > span:nth-child(1){
+    display: block;
+} 
+
+.btn_int>span:nth-child(2) {
+    position: relative;
+    z-index: 2;
+    font-size: 2rem;
+}
+
+.line {
+    width: 8rem;
+    border-bottom: .5vw solid #0F5114;
+    position: absolute;
+    top: 37rem;
+    left: 35vw;
+}
+
+.seolmyeong {
+    position: absolute;
+    top: 10rem;
+    left: 15vw;
+    line-height: 1.4vw;
+    color: #111;
+    font-size: 1rem;
+    width: 18rem;
+    word-break: keep-all;
+}
+
+.topic {
+    position: absolute;
+    top: 38rem;
+    left: 35vw;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #111;
+}
+
+.btn_more {
+    position: absolute;
+    top: 50rem;
+    left: 15vw;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1rem;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    padding: .8rem;
+    cursor: pointer; 
+    font-family: 'GmarketSansLight'; 
+    font-weight: bold;
+}
+
+.styls_box {
+    position: relative;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.styls_img1 {
+    width: 18rem;
+    position: absolute;
+    top: 19rem;
+    left: 15vw;
+}
+
+.styls_img2 {
+    width: 22rem;
+    position: absolute;
+    top: 0;
+    left: 35vw;
+}
+
+.styls_img3 {
+    width: 21rem;
+    position: absolute;
+    top: 25rem;
+    left: 58vw;
+}
+
+
+/* aside */
+
+aside {
+    width: 100%;
+    height: 30vw;
+    background: linear-gradient(to left, #b8b8b8 50%, #e0e1de 50%);
+    position: relative;
+}
+
+.img1 {
+    width: 12vw;
+    position: absolute;
+    left: 5vw;
+    top: -4vw;
+}
+
+.img2 {
+    width: 11vw;
+    position: absolute;
+    left: 20vw;
+    top: 14vw;
+}
+
+.img3 {
+    width: 20vw;
+    position: absolute;
+    left: 40vw;
+    top: 1.5vw;
+    border-radius: 10vw 10vw 0 0;
+}
+
+.img4 {
+    width: 10vw;
+    position: absolute;
+    left: 70vw;
+    top: 10vw;
+}
+
+.img5 {
+    width: 8vw;
+    position: absolute;
+    left: 85vw;
+    top: 22vw;
+}
+
+.img6 {
+    position: absolute;
+    top: 7.5vw;
+    left: 12vw;
+    width: 13vw;
+    animation: rotate_image 20s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+.img7 {
+    width: 2.5vw;
+    position: absolute;
+    top: 12vw;
+    left: 28.5vw;
+    animation: up-down 1.4s infinite ease-in-out alternate;
+}
+
+.img8 {
+    width: 2.5vw;
+    position: absolute;
+    top: 16.5vw;
+    right: 15vw;
+    animation: up-down 1.4s infinite ease-in-out alternate;
+}
+
+.img9 {
+    width: 100px;
+    position: absolute;
+    left: 47.5%;
+    top: 2vw;
+}
+
+.text_box {
+    color: #fff;
+}
+
+.text1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 6vw;
+    position: absolute;
+    bottom: -2vw;
+}
+
+.text2 {
+    font-family: 'HSBombaram';
+    font-size: 2.5vw;
+    position: absolute;
+    right: 8vw;
+    top: 2vw;
+    text-align: right;
+    line-height: 2.5vw;
+    font-weight: normal;
+}
+
+.text3 {
+    font-family: 'Abril Fatface', cursive;
+    position: absolute;
+    left: 62vw;
+    top: 20vw;
+    font-size: 2vw;
+    font-weight: normal;
+}
+
+.text4 {
+    position: absolute;
+    left: 62vw;
+    top: 23vw;
+    font-size: .8rem;
+    font-weight: normal;
+    line-height: 1.2rem;
+}
+
+
+/* article */
+
+article {
+    width: 100%;
+    height: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 12vw;
+}
+
+.contact_box {
+    display: flex;
+    justify-content: center;
+}
+
+.show_box {
+    margin: 2vw;
+    width: 23vw;
+    height: 23vw;
+    border: 1px solid rgb(54, 54, 54);
+    border-radius: 1vw;
+    padding-top: 2.5vw;
+    cursor: pointer;
+    position: relative;
+}
+
+.show_box img {
+    width: 70%;
+}
+
+.show_box p {
+    font-size: 1.7vw;
+    font-weight: bold;
+    padding-top: 2vw;
+}
+
+.show_box:hover {
+    box-shadow: .2vw .2vw .2vw gainsboro;
+}
+
+.show_box:hover img,
+.show_box:hover p {
+    opacity: 0;
+    transition: .5s;
+    transform: rotateX(90deg);
+}
+
+.hidden_box {
+    width: 100%;
+    position: absolute;
+    top: 10vw;
+    display: none;
+}
+
+.hidden_box h3,
+.hidden_box a {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5vw;
+    font-weight: bold;
+    transition: .3s;
+    letter-spacing: 1px;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 12rem;
+    background-color: #90aa92;
+}
+
+.footer_inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_left {
+    color: #fff;
+    margin-left: 7vw;
+}
+
+.footer_left p {
+    font-size: .5rem;
+}
+
+.f_logo {
+    width: 11vw;
+}
+
+.f_logo img {
+    width: 100%;
+}
+
+.footer_right {
+    color: #fff;
+    margin-right: 7vw;
+    text-align: right;
+}
+
+.footer_right p {
+    padding-bottom: .5vw;
+}
+
+@media screen and (max-width: 1500px){
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    :root {
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 1000px){
+
+    :root {
+        font-size: 9px;
+    }
+
+    a {
+        font-family: 'GmarketSansMedium';
+    }
+    
+    ul li {
+        font-family: 'GmarketSansMedium';
+    }
+
+    .interior_box {
+        height: 150vh;
+    }
+
+    .motion_circle div, .motion_circle_bg div, .motion_line div, .Vertical {
+        display: none;
+    }
+
+    .btn_family {
+        right: 10vw;
+    }
+    
+    .btn_int>span:nth-child(1) {
+        width: 15rem;
+    }
+    
+    .btn_int>span:nth-child(2) {
+        font-size: 4rem;
+    }
+    
+    .line {
+        width: 10rem;
+        top: 55rem;
+        left: 5vw;
+    }
+    
+    .seolmyeong {
+        top: 100rem;
+        left: 50vw;
+        line-height: 2.5rem;
+        font-size: 1.5rem;
+        width: 35vw;
+    }
+    
+    .topic {
+        top: 57rem;
+        left: 5vw;
+        font-size: 6rem;
+    }
+    
+    .btn_more {
+        width: 20rem;
+        top: 125rem;
+        left: 50vw;
+        font-size: 2rem;
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+    }
+    
+    .styls_img1 {
+        width: 40%;
+        top: 0;
+        left: 5vw;
+    }
+    
+    .styls_img2 {
+        width: 40%;
+        top: 40rem;
+        left: 50vw;
+    }
+    
+    .styls_img3 {
+        width: 40%;
+        top: 90rem;
+        left: 5vw;
+    }
+
+    .text4 {
+        font-size: .5rem;
+        line-height: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 760px){
+
+    :root {
+        font-size: 6px;
+    }
+
+    .fixed_menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        padding: 3rem 0;
+        background: rgba(255, 255, 255, .8);
+    }
+
+    .min_menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 3rem;
+    }
+
+    .logo_b {
+        width: 11rem;
+    }
+    
+    .logo_b img {
+        width: 100%;
+    }    
+    
+    .nav_menu {
+        display: none;
+    }
+
+    .min_menu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .min_menu ul li, a{
+        color: #111;
+        font-size: 1rem;
+        font-family: 'GmarketSansLight';
+    }
+
+    #bg_txt p{
+        font-size: 4rem;
+        top: 30rem;
+    }
+
+    .interior_box {
+        height: 110vh;
+    }
+
+    .line {
+        width: 10rem;
+        top: 59rem;
+    }
+
+    .topic {
+        top: 61rem;
+    }
+
+    .seolmyeong {
+        top: 115rem;
+        left: 50vw;
+    }
+
+    .btn_more {
+        top: 135rem;
+        left: 50vw;
+    }
+
+    aside {
+    height: 50vw;
+    }
+
+    .img1 {
+        width: 15vw;
+    }
+
+    .img2, .img4, .img5 {
+        display: none;
+    }
+
+    .img3 {
+        width: 35vw;
+        left: 32vw;
+        border-radius: 20vw 20vw 0 0;
+    }
+
+    .img6 {
+        top: 4vw;
+        left: 10vw;
+        width: 30vw;
+    }
+
+    .img7 {
+        width: 7rem;
+        top: 12vw;
+        left: 25vw;
+    }
+
+    .img8 {
+        width: 7rem;
+        top: 25vw;
+        left: 90vw;
+    }
+
+    .img9 {
+        width: 20rem;
+        left: 43%;
+        top: 3vw;
+    }
+
+    .text_box {
+        color: #fff;
+    }
+
+    .text1 {
+        font-size: 12rem;
+        bottom: -3vw;
+    }
+
+    .text2 {
+        font-size: 4.5rem;
+        right: 2vw;
+        line-height: 5.5rem;
+    }
+
+    .text3 {
+        width: 30rem;
+        left: 70vw;
+        top: 30vw;
+        font-size: 3rem;
+    }
+    
+    .text4 {
+        width: 30rem;
+        left: 70vw;
+        top: 35vw;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .interior_box {
+        height: 100vh;
+    }
+
+    .seolmyeong {
+        top: 105rem;
+    }
+
+    .btn_more {
+        top: 125rem;
+        left: 50vw;
+    }
+
+}
+
+@media screen and (max-width: 460px){
+
+    :root {
+        font-size: 5px;
+    }
+    
+    .about_us {
+        padding: 8rem 0;
+        overflow-y: hidden;
+    }
+
+    .about_us_text {
+        width: 80%;
+        z-index: 1;
+        padding-left: 5rem;
+    }
+    
+    .about_us_text h1 {
+        font-size: 3.5rem;
+        font-family: 'GmarketSansMedium';
+        color: #fff;
+    }
+    
+    .about_us_text h2 {
+        color: #fff;
+        font-size: 3rem;
+    }
+    
+    .about_us_text p, .interior_text p {
+        font-size: 1rem;
+        line-height: 3rem;
+        color: #fff;
+    }
+    
+    .about_us_img {
+        position: absolute;
+        width: 90%;
+        right: 0;
+        filter: brightness(90%); 
+    }
+    
+    } 
+
+
+
+
+
+
+

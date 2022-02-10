@@ -1,0 +1,542 @@
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Praise', cursive;
+font-family: 'Trirong', serif; 
+*/
+
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HSBombaram';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/HSBombaram.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul li {
+    list-style: none;
+    color: #fff;
+}
+
+.warp {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/********** nav-menu **********/
+
+header {
+    width: 100%;
+    height: 6vw;
+    position: relative;
+}
+
+.nav {
+    width: 100%;
+    height: 100%;
+    border-bottom: #90aa92 1px solid;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo {
+    width: 12vw;
+    margin-top: 1vw;
+    position: absolute;
+    left: 8vw;
+    filter: invert(0);
+}
+
+.hide-logo {
+    width: 100%;
+    display: none;
+}
+
+.logo_w {
+    width: 15vmax;
+    margin-top: 2vw;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav_menu {
+    position: absolute;
+    right: 6vw;
+    top: 2.2vw;
+}
+
+.nav_menu ul {
+    display: flex;
+}
+
+.nav_btn {
+    color: #000;
+    font-size: 1.2rem;
+    padding: 1.5vw;
+    margin: 1vw;
+    font-family: 'GmarketSansLight';
+    font-weight: bold;
+}
+
+.nav_btn:hover {
+    color: #90aa92;
+}
+
+
+/*********** 상담창 *********/
+
+main {
+    width: 100%;
+    background: url(../img/subbg) no-repeat;
+    background-size: cover;
+    padding-bottom: 5rem;
+}
+
+.title {
+    width: 13%;
+    margin: 0 auto;
+    padding: 5vmax 0;    
+    text-align: center;
+    font-family: 'HSBombaram';
+}
+
+.line {
+    width: 100%;
+    border-bottom: #90aa92 .5vmax solid;
+    margin: 1vmax auto;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    width: 50%;
+}
+
+section {
+    width: 50%;
+}
+
+/**** left-box ****/
+
+.left_box {
+    width: 70%;
+    margin: 0 30%;
+    padding: 8vw 2vw;
+    text-align: center;
+}
+
+.left_box h3 {
+    margin-bottom: 2vw;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.3rem;
+}
+
+.left_box img {
+    width: 100%;
+    margin-bottom: 1vw;
+}
+
+.left_box p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: .5rem;
+    font-family: 'ChosunGu';
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5vw;
+    color: #999;
+}
+
+/**** right-box ****/
+
+.right_box {
+    width: 60%;
+    margin: 0 0 0 5%;
+    font-family: 'ChosunGu';
+    font-weight: bold;
+    font-size: .8vw;
+}
+
+.right_box p {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+/* check-box */
+
+.box-checkbox-input input[type="checkbox"] {
+    display: none;
+}
+
+.box-checkbox-input input[type="checkbox"]+span {
+    display: inline-block;
+    width: 32.7%;
+    /* margin: 0.6vw auto; */
+    padding: 1vmin;
+    background-color: #fff;
+    border: rgb(199, 199, 199) 1px solid;
+    border-radius: .2vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.box-checkbox-input input[type="checkbox"]:checked+span {
+    border: 1px solid #0F5114;;
+    background: #0F5114;;
+    color: #fff;
+}
+
+/* radio-box */
+
+.box-radio-input input[type="radio"] {
+    display: none;
+}
+
+.box-radio-input input[type="radio"]+span {
+    display: inline-block;
+    position: relative;
+    width: 49.5%;
+    /* margin: .6vw 0; */
+    padding: 1vmin;
+    border: rgb(199, 199, 199) 1px solid;
+    border-radius: .2vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: .8rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.box-radio-input input[type="radio"]:checked+span {
+    border: 1px solid #0F5114;;
+    background: #0F5114;;
+    color: #fff;
+}
+
+/* radio-box2 */
+
+.box-radio-input2 input[type="radio"] {
+    display: none;
+}
+
+.box-radio-input2 input[type="radio"]+span {
+    display: inline-block;
+    position: relative;
+    width: 32.7%;
+    /* margin: .6vw 0; */
+    padding: 1vmin;
+    border: rgb(199, 199, 199) 1px solid;
+    border-radius: .2vw;
+    text-align: center;
+    font-weight: bold;
+    font-size: .8rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.box-radio-input2 input[type="radio"]:checked+span {
+    border: 1px solid #0F5114;;
+    background: #0F5114;;
+    color: #fff;
+}
+
+/* input */
+
+#area {
+    width: 100%;
+    /* margin: .6vw 0; */
+    padding: 1.2vmin;
+    border: rgb(199, 199, 199) 1px solid;
+    border-radius: .2vw;
+    color: rgb(199, 199, 199);
+}
+
+input:focus {
+    outline: 1px solid #90aa92;
+}
+
+input {
+    font-family: 'ChosunGu';
+    font-weight: bold;
+    font-size: .7rem;
+}
+
+/* tel/email */
+
+.tel {
+    display: inline-block;
+    padding: 1vmin;
+    width: 25%;
+    background-color: #fdfdfd;
+    border: rgb(199, 199, 199) 1px solid;
+    border-radius: .2vw;
+    font-family: 'ChosunGu';
+    font-weight: bold;
+    font-size: .8rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+#telemail {
+    width: 74%;
+    font-size: .8rem;
+    padding: 1.1vmin;
+    border: rgb(199, 199, 199) 1px solid;
+    border-radius: .2vw;
+    margin-left: .2vw;
+}
+
+
+/* 파일업로드 */
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+.filebox label {
+    display: inline-block;
+    width: 18%;
+    padding: 1vmin;
+    color: #999;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    border: rgb(199, 199, 199) 1px solid;
+    border-radius: .2vw;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1vw;
+}
+
+.filebox .upload-name {
+    display: inline-block;
+    width: 81%;
+    padding: .6vw;
+    font-size: .8rem;
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    border: 1px solid #ebebeb;
+    border-radius: .2vw;
+}
+
+.submit-box {
+    width: 100%;
+    margin: 2vmax auto;
+
+}
+
+.submit-btn {
+    width: 7vmax;
+    padding: 1vmax;
+    font-size: 1rem;
+    background-color: #0F5114;;
+    color: #fff;
+    border: none;
+    border-radius: 2vw;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 13vmax;
+    background-color: #90aa92;
+    position: relative;
+    z-index: 100;
+}
+
+.footer_inner {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3vw;
+}
+
+.footer_left {
+    float: left;
+    color: #fff;
+    margin-left: 7vw;
+}
+
+.footer_left p {
+    font-size: .5vw;
+}
+
+.f_logo {
+    width: 11vmax;
+}
+
+.f_logo img {
+    width: 100%;
+}
+
+.footer_right {
+    float: right;
+    color: #fff;
+    margin-right: 7vw;
+    text-align: right;
+}
+
+.footer_right p {
+    padding-bottom: .5vw;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    section {
+        width: 90% !important;
+        height: 85vmax !important;
+    }
+
+    .tel {
+        font-size: .5rem !important;
+    }
+
+    .left_box p {
+        font-size: .5rem !important;
+    }
+
+    .nav_btn {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+
+    :root {
+        font-size: 12px !important;
+    }
+
+    header {
+        height: 10vmax !important;
+        background-color: #90aa92;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .hide-logo {
+        display: block !important;
+    }
+
+    .title {
+        padding: 2vmax 0 !important;    
+    }
+
+    .contact {
+        display: block !important;
+    }
+
+    aside {
+        width: 100% !important;
+    }
+
+    .left_box {
+        width: 80% !important;
+        margin: 0 auto !important;
+        padding: 0 0 5vmax 0!important;
+    }
+
+
+    .left_box p {
+        line-height: 15px !important;
+    }
+
+
+    h1 {
+        font-size: 1.3rem !important;
+    }
+
+    h3 {
+        font-size: 1rem !important;
+    }
+
+    .left_box img {
+        width: 70% !important;
+    }
+
+    section {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .right_box {
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+
+    input {
+        font-size: 6px !important;
+    }
+
+    .nav_btn {
+        display: none !important;
+    }
+
+    .submit-btn {
+        top: 55% !important;
+    }
+
+    .footer_right {
+        display: none;
+    }
+    
+    .footer_right p {
+        padding-bottom: .5vw;
+    }
+    
+}
