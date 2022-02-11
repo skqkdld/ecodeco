@@ -670,7 +670,7 @@ figure {
 }
 
 .btn_int>span:nth-child(1) {
-    height: 3rem;
+    height: 2rem;
     width: 8rem;
     background: linear-gradient(to top, #90aa92 60%, #ffffff00 40%);
     position: absolute;
@@ -1283,9 +1283,9 @@ footer {
     }
 
     .img6 {
-        top: 70rem;
-        left: 60vw;
-        width: 30rem;
+        top: 50rem;
+        left: 79vw;
+        width: 35rem;
     }
 
     .img7 {
@@ -1303,7 +1303,7 @@ footer {
     .img9 {
         width: 20rem;
         left: 38%;
-        top: 25vw;
+        top: 28vw;
     }
 
     .text_box {
