@@ -20,33 +20,6 @@
     font-style: normal;
 }
 
-
-@keyframes rotate_image {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes up-down {
-    from {
-        transform: translatey(0px);
-    }
-
-    to {
-        transform: translatey(-10px);
-    }
-}
-
-@keyframes up-down2 {
-    from {
-        transform: translatey(0px);
-    }
-
-    to {
-        transform: translatey(-20px);
-    }
-}
-
 body {
     font-family: 'GmarketSansLight';
     font-weight: bold;
@@ -58,6 +31,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
+}
+
+:root {
     font-size: 16px;
 }
 
@@ -149,28 +126,26 @@ video {
 }
 
 .nav {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 1.5rem;
 }
 
 .logo {
-    width: 11rem;
-    margin-top: 3rem;
+    width: 13rem;
 }
 
 .logo img {
     width: 100%;
-
 }
 
 .nav_menu ul{
     width: 100%;
     display: flex;
     align-items: center;
-    margin-top: 3rem;
 }
 
 .nav_menu ul li {
@@ -178,6 +153,7 @@ video {
     padding: 0 1rem;
     margin: 0 2rem;
     font-size: 1.3rem;
+    text-shadow: 1px 1px 2px #111;
 }
 
 .nav_menu ul li:nth-child(4) {
@@ -187,21 +163,21 @@ video {
 
 .nav_menu ul li:hover, .nav_menu a:hover {
     color: #000;
+    text-shadow: 1px 1px 2px #fff;
 }
 
 .nav_menu a {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 #bg_txt p{
     color: #fff;
     text-align: end;
     font-size: 5rem;
-    margin-right: 10rem;
     position: absolute;
-    top: 23vw;
-    right: 1rem;
+    top: 22vw;
+    right: 5rem;
     z-index: 1;
     text-shadow: 2px 2px 5px #111;
 }
@@ -238,14 +214,16 @@ section {
 .about_us_text h1, .interior_text h1 {
     font-size: 3.5rem;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .about_us_text h2 {
     font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .about_us_text p, .interior_text p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 2rem;
 }
 
@@ -319,6 +297,7 @@ figure {
     position: relative;
     object-fit: cover;
 }
+/**************************모바일  */
 
 .eco_hide {
     display: none;
@@ -382,39 +361,7 @@ figure {
     background-repeat: no-repeat;
 }
 
-.slick-dots {
-    position: absolute;
-    top: 27vw;
-    z-index: 1;
-    left: 47%;
-    transform: translateY(-45%);
-}
-
-.slick-dots::after {
-    clear: both;
-    content: "";
-    display: block;
-}
-
-.slick-dots li {
-    float: left;
-    margin: 0 1rem;
-}
-
-.slick-dots li button {
-    width: .5vw;
-    height: .5vw;
-    opacity: .5;
-    background: url(../img/circle.png) no-repeat;
-    background-size: cover;
-    color: rgba(255, 235, 205, 0) !important;
-}
-
-.slick-dots .slick-active button {
-    background: url(../img/circle_on.png) no-repeat;
-    background-size: cover;
-    opacity: 1;
-}
+/**********************모바일끝  */
 
 .eco_img {
     width: 100%;
@@ -889,6 +836,31 @@ aside {
     line-height: 1.2rem;
 }
 
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes up-down {
+    from {
+        transform: translatey(0px);
+    }
+
+    to {
+        transform: translatey(-10px);
+    }
+}
+
+@keyframes up-down2 {
+    from {
+        transform: translatey(0px);
+    }
+
+    to {
+        transform: translatey(-20px);
+    }
+}
 
 /* article */
 
@@ -932,11 +904,15 @@ article {
 }
 
 .show_box p {
-    font-size: 1.7vw;
-    font-weight: bold;
+    font-size: 1.8rem;
     padding-top: 2vw;
 }
 
+.show_box a p {
+    font-size: 1.8rem;
+    padding-top: 2.3vw;
+    font-family: 'GmarketSansLight';
+}
 
 @media (hover: hover) {
     .show_box:hover {
@@ -994,6 +970,7 @@ footer {
 
 .footer_left p {
     font-size: .5rem;
+    line-height: 1rem;
 }
 
 .f_logo {
@@ -1053,6 +1030,10 @@ footer {
         font-family: 'GmarketSansMedium';
     }
 
+    .hover_img:hover .white_box{
+        height: 10rem;
+    } 
+
     .interior_box {
         height: 150vh;
     }
@@ -1067,6 +1048,7 @@ footer {
     
     .btn_int>span:nth-child(1) {
         width: 15rem;
+        height: 3rem;
     }
     
     .btn_int>span:nth-child(2) {
@@ -1524,6 +1506,12 @@ footer {
         display: none;
     }
 
+    .show_box:hover img,
+    .show_box:hover p {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+
     footer {
         height: 20rem;
     }
@@ -1537,7 +1525,7 @@ footer {
     }
     
     .footer_left p {
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
 } 
 
