@@ -177,7 +177,7 @@ video {
     cursor: pointer;
     padding: 0 1rem;
     margin: 0 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .nav_menu ul li:nth-child(4) {
@@ -191,7 +191,7 @@ video {
 
 .nav_menu a {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 #bg_txt p{
@@ -1022,11 +1022,19 @@ footer {
     :root {
         font-size: 12px;
     }
+
+    .nav_menu ul li, .nav_menu a {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 1200px){
     :root {
         font-size: 10px;
+    }
+
+    .logo {
+        width: 15rem;
     }
     
 }
@@ -1131,6 +1139,10 @@ footer {
 
     .nav_menu ul li {
         padding: 0;
+    }
+
+    .logo {
+        width: 17rem;
     }
 
     #bg_txt p{
@@ -1270,8 +1282,28 @@ footer {
         margin-left: 20%;
     }
 
-    .img6, .img7, .img8, .img9{
-        display: none;
+    .img6 {
+        top: 70rem;
+        left: 60vw;
+        width: 30rem;
+    }
+
+    .img7 {
+        width: 7rem;
+        top: 35vw;
+        left: 12vw;
+    }
+
+    .img8 {
+        width: 7rem;
+        top: 25vw;
+        left: 80vw;
+    }
+
+    .img9 {
+        width: 20rem;
+        left: 38%;
+        top: 25vw;
     }
 
     .text_box {
@@ -1287,6 +1319,7 @@ footer {
         font-size: 10rem;
         text-shadow: 2px 2px 1px #000;
         text-align: center;
+        padding-top: 3rem;
     }
 
     .text1 {
@@ -1298,7 +1331,9 @@ footer {
         font-size: 4rem;  
         text-shadow: 1px 1px 1px #555;
         text-align: center;
-        padding: 5rem 0;
+        padding: 4rem 0;
+        padding-bottom: 2rem;
+
     }
 
     .text2 br, .text3 {
@@ -1312,7 +1347,7 @@ footer {
         line-height: 4rem;
         text-align: center;
         color: #111;
-        margin: 2rem auto;
+        margin: 1rem auto;
         padding-bottom: 5rem;
     }
 
