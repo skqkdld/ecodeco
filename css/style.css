@@ -1359,6 +1359,7 @@ footer {
     
     section {
         width: 100%;
+        overflow-x: hidden;
     }
 
     .about_us {
@@ -1419,10 +1420,6 @@ footer {
 
     .hover_box {
         display: none;
-    }
-
-    figure {
-        /* height: 100%; */
     }
 
     .eco_hide {
