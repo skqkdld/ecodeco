@@ -1347,12 +1347,21 @@ footer {
         font-size: 5px;
     }
 
+    header {
+        height: 60rem;
+    }
+
     .fixed_menu {
         display: block;
         top: 0;
+        position: fixed;
     }
     .nav {
         display: none;
+    }
+
+    .vdo video {
+        height: 70rem;
     }
     
     section {
@@ -1467,6 +1476,10 @@ footer {
     article {
         height: 100%;
         margin-bottom: 10rem;
+    }
+
+    .img6 {
+        overflow-x: hidden;
     }
 
     .contact {
