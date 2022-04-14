@@ -1348,7 +1348,7 @@ footer {
     }
 
     header {
-        height: 60rem;
+        height: 40rem;
     }
 
     .fixed_menu {
@@ -1358,10 +1358,6 @@ footer {
     }
     .nav {
         display: none;
-    }
-
-    .vdo video {
-        height: 70rem;
     }
     
     section {
