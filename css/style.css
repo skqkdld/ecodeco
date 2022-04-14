@@ -589,6 +589,7 @@ figure {
     top: 11rem;
     left: 6vw;
     font-family: 'Abril Fatface', cursive;
+    src: url("./css/font/Abril-Fatface-Regular.ttf");
     color: #0F5114;
     font-size: 4rem;
     font-weight: normal;
